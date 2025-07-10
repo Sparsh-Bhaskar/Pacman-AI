@@ -43,3 +43,13 @@ In this game, **you control Pac-Man**, who must navigate a maze, eat all the dot
 3. Run: python main.py
 4. Move Pac-Man with arrow keys
 5. Press 1-5 to switch ghost AI
+
+## 🛠 Technology Stack
+
+- **Language:** Python  
+- **Library:** Pygame (for graphics and input)  
+- **AI Techniques:** BFS, DFS, A\*, Hill Climbing, DFS-ID  
+
+---
+
+> Created using Python & Pygame | Demonstrates classic AI pathfinding algorithms in a maze game.
