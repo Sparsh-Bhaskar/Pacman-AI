@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -27,6 +27,70 @@
 
     <footer>
       <p>Made by using Python & Pygame</p>
+    </footer>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pac-Man AI Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pac-Man AI Project</h1>
+
+    <p>
+      In this game, <strong>you control Pac-Man</strong>, who must navigate a maze, eat all the dots, and avoid being caught by <strong>AI-controlled ghosts</strong>. Each ghost uses a different classic pathfinding algorithm to intelligently chase Pac-Man through the maze.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>2D grid-based maze with walls and collectible dots</li>
+      <li>Pac-Man moves using arrow keys (Up, Down, Left, Right)</li>
+      <li>Ghosts can't pass through walls and use AI to chase Pac-Man</li>
+    </ul>
+
+    <h2>AI Pathfinding Algorithms Used</h2>
+    <ul>
+      <li><strong>BFS (Breadth-First Search)</strong>: Explores all possible moves step-by-step to find the shortest path</li>
+      <li><strong>DFS (Depth-First Search)</strong>: Explores a single path as far as possible before backtracking</li>
+      <li><strong>A*</strong>: Uses a heuristic to find the shortest path efficiently</li>
+      <li><strong>Hill Climbing</strong>: Always moves toward the direction closest to Pac-Man, may get stuck</li>
+      <li><strong>DFS-ID</strong>: Repeated DFS with increasing depth limits, low memory usage</li>
+    </ul>
+
+    <p>
+      You can switch between these ghost AI algorithms in real time by pressing keys <code>1</code> to <code>5</code>.
+    </p>
+
+    <h2>Game Flow</h2>
+    <ol>
+      <li>Launch the game and control Pac-Man using arrow keys</li>
+      <li>Ghosts calculate a path to Pac-Man using the selected algorithm</li>
+      <li>Pac-Man eats dots while avoiding the ghosts</li>
+      <li>Game ends if a ghost catches Pac-Man (Game Over) or if all dots are eaten (You Win!)</li>
+    </ol>
+
+    <h2>How to Play</h2>
+    <pre><code>1. Install Python and Pygame
+2. Open terminal in this folder
+3. Run: python main.py
+4. Move Pac-Man with arrow keys
+5. Press 1-5 to switch ghost AI</code></pre>
+
+    <h2>Technology Stack</h2>
+    <ul>
+      <li><strong>Language:</strong> Python</li>
+      <li><strong>Library:</strong> Pygame (for graphics and input)</li>
+      <li><strong>AI:</strong> BFS, DFS, A*, Hill Climbing, DFS-ID</li>
+    </ul>
+
+    <footer>
+      <p>Created using Python & Pygame | Demonstrates classic AI pathfinding</p>
     </footer>
   </div>
 </body>
